@@ -7,6 +7,8 @@ import StatisticItems from './StatisticItems/StatisticItems';
 //Utils
 import countPositiveFeedbackPercentage from 'utils/countPositiveFeedbackPercentage';
 import countTotalFeedback from 'utils/countTotalFeedback';
+//Styles
+import styles from './Feedback.module.css';
 
 const Feedback = () => {
   const [good, setGood] = useState(0);
@@ -45,7 +47,7 @@ const Feedback = () => {
   }
 
   return (
-    <>
+    <div className={styles.container}>
       <Section>
         <Buttons onClick={onClickButton} labels={['good', 'neutral', 'bad']} />
       </Section>
@@ -54,7 +56,7 @@ const Feedback = () => {
           <StatisticItems listItemsStates={Object.entries(listEntries)} />
         </StatisticList>
       )}
-    </>
+    </div>
   );
 };
 

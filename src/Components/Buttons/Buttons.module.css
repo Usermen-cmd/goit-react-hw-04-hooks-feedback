@@ -1,0 +1,17 @@
+.button {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 6px;
+}
+
+.good {
+  background-color: #74d677;
+}
+.neutral {
+  background-color: #d0d674;
+}
+.bad {
+  background-color: #d67474;
+}

@@ -1,8 +1,10 @@
+import styles from './StatisticList.module.css';
+
 const StatisticList = ({ children }) => {
   return (
     <>
-      <h2>Statistic</h2>
-      <ul>{children}</ul>
+      <h2 className={styles.header}>Statistic</h2>
+      <ul className={styles.list}>{children}</ul>
     </>
   );
 };

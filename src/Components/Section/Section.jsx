@@ -1,9 +1,11 @@
+import styles from './Section.module.css';
+
 const Section = ({ children }) => {
   return (
-    <>
-      <h1>Please leave feedback</h1>
-      {children}
-    </>
+    <div className={styles.section}>
+      <h1 className={styles.header}>Please leave feedback</h1>
+      <div className={styles.container}>{children}</div>
+    </div>
   );
 };
 
