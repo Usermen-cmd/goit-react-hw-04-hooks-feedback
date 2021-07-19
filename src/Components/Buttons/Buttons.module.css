@@ -4,14 +4,33 @@
   padding: 10px 30px;
   border: none;
   border-radius: 6px;
+  transition: transform 200ms linear, background-color 200ms linear;
+}
+
+.button:active {
+  transform: scale(0.95);
 }
 
 .good {
-  background-color: #74d677;
+  background-color: rgba(116, 214, 119, 0.8);
 }
+
+.good:hover {
+  background-color: rgba(116, 214, 119, 1);
+}
+
 .neutral {
-  background-color: #d0d674;
+  background-color: rgba(208, 214, 116, 0.8);
 }
+
+.neutral:hover {
+  background-color: rgba(208, 214, 116, 1);
+}
+
 .bad {
-  background-color: #d67474;
+  background-color: rgba(214, 116, 116, 0.8);
+}
+
+.bad:hover {
+  background-color: rgba(214, 116, 116, 1);
 }
